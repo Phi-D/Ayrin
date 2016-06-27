@@ -1,0 +1,9 @@
+[submodule "provisioning/roles/nginx"]
+	path = provisioning/roles/nginx
+	url = git@github.com:geerlingguy/ansible-role-nginx.git
+[submodule "provisioning/roles/oracle-java"]
+	path = provisioning/roles/oracle-java
+	url = git@github.com:William-Yeh/ansible-oracle-java.git
+[submodule "provisioning/roles/orientdb"]
+	path = provisioning/roles/orientdb
+	url = git@github.com:migibert/orientdb-role.git

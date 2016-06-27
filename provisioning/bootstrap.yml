@@ -1,0 +1,54 @@
+---
+- hosts: all
+  sudo: true
+  #accelerate: true
+
+  roles:
+    - nginx
+    - oracle-java
+    - orientdb
+
+  tasks:
+
+      - name: install some admin packages
+        apt: pkg={{ item }} update_cache=yes cache_valid_time=3600 state=installed
+        with_items:
+          - sudo
+          - curl
+          - unzip
+          - git
+          - vim
+
+      - name: Install nodejs
+        shell:
+          executable=/bin/bash
+          curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && \
+          sudo apt-get install -y nodejs
+
+      - name: Update node to lastest version
+        shell:
+          executable=/bin/bash
+          npm install -g npm@latest
+
+      - name: Install gulp
+        shell:
+          executable=/bin/bash
+          npm install -g gulp --safe-perm
+
+      - name: Install jspm globally
+        shell:
+          executable=/bin/bash
+          npm install jspm -g --safe-perm
+
+      - name: Install node dependencies
+        shell:
+          executable=/bin/bash
+          chdir=/usr/src/development
+          npm install
+
+      - name: Install aurelia dependencies
+        shell:
+          executable=/bin/bash
+          chdir=/usr/src/development
+          jspm install
+

@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+development/node_modules
+development/jspm_packages
+provisioning/roles
+.vagrant
+.idea
