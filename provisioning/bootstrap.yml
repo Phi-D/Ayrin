@@ -18,6 +18,7 @@
           - unzip
           - git
           - vim
+          - build-essential
 
       - name: Install nodejs
         shell:
