@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
+const ignore = require('gulp-ignore');
 const runSequence = require('run-sequence');
 const del = require('del');
 const vinylPaths = require('vinyl-paths');
@@ -42,7 +43,8 @@ function normalizeExportPaths() {
 
 // deletes all files in the output path
 gulp.task('clean-export', function() {
-  return gulp.src([ paths.exportSrv ])
+  return gulp.src([ paths.exportSrv])
+    pipe( ignore.exclude("www/assets/**") )
     .pipe(vinylPaths(del));
 });
 

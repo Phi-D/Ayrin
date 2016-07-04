@@ -1,7 +1,7 @@
 import {TypesDefinitionService} from 'system/services/TypesDefinitionService';
-new TypesDefinitionService().setType('paragraph', {
+new TypesDefinitionService().setType('header', {
   type:"field",
-  name:"paragraph",
+  name:"header",
   dataType: "html",
   edit: "edit.html",
   display: "display.html",

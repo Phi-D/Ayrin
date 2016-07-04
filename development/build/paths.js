@@ -1,6 +1,7 @@
 var appRoot = 'src/';
 var outputRoot = 'dist/';
 var exportSrvRoot = 'www/';
+var exportExclude = "www/assets{,/**}";
 
 module.exports = {
   root: appRoot,
@@ -10,6 +11,7 @@ module.exports = {
   style: 'styles/**/*.css',
   output: outputRoot,
   exportSrv: exportSrvRoot,
+  exportExclude : exportExclude,
   doc: './doc',
   e2eSpecsSrc: 'test/e2e/src/**/*.js',
   e2eSpecsDist: 'test/e2e/dist/'

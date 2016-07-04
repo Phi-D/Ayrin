@@ -2,11 +2,12 @@ import {inject, bindable} from 'aurelia-framework';
 import { EventAggregator } from 'aurelia-event-aggregator';
 
 @inject(EventAggregator)
-export class Paragraph {
+export class Image {
 
   @bindable instanceName = ''
+  @bindable path = ''
   constructor(EventAggregator) {
-    this.content = "Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.";
+    this.path = "assets/images/test.jpg";
     this.ea = EventAggregator;
   }
 
@@ -15,7 +16,6 @@ export class Paragraph {
   }
 
   save() {
-    console.log(">>>>> save");
     this.ea.publish( "switch-state-"+this.instanceName, "display");
   }
 
