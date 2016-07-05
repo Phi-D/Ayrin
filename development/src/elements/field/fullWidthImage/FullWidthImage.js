@@ -2,12 +2,16 @@ import {inject, bindable} from 'aurelia-framework';
 import { EventAggregator } from 'aurelia-event-aggregator';
 
 @inject(EventAggregator)
-export class Header {
+export class FullWidthImage {
 
   @bindable instanceName = ''
-  @bindable class=''
+  @bindable path = ''
+  @bindable class = '';
+
   constructor(EventAggregator) {
-    this.content = "Wonderful Title";
+
+    this.class="full-width-image";
+    this.path = "assets/images/test.jpg";
     this.ea = EventAggregator;
   }
 
@@ -22,7 +26,6 @@ export class Header {
   activate(data) {
     this.data = data;
     this.instanceName = this.data.instanceName;
-    this.class = this.data.class;
   }
 
 }

@@ -813,6 +813,11 @@ System.config({
   bundles: {
     "app-build.js": [
       "TypesDefinitionDeclaration.js",
+      "elements/field/fullWidthImage/FullWidthImage.js",
+      "elements/field/fullWidthImage/FullWidthImageDefinition.js",
+      "elements/field/fullWidthImage/display.html!github:systemjs/plugin-text@0.0.3.js",
+      "elements/field/fullWidthImage/edit.html!github:systemjs/plugin-text@0.0.3.js",
+      "elements/field/fullWidthImage/fullWidthImage.css!github:systemjs/plugin-text@0.0.3.js",
       "elements/field/header/Header.js",
       "elements/field/header/HeaderDefinition.js",
       "elements/field/header/display.html!github:systemjs/plugin-text@0.0.3.js",
@@ -825,10 +830,16 @@ System.config({
       "elements/field/paragraph/ParagraphDefinition.js",
       "elements/field/paragraph/display.html!github:systemjs/plugin-text@0.0.3.js",
       "elements/field/paragraph/edit.html!github:systemjs/plugin-text@0.0.3.js",
+      "elements/module/hero/Hero.js",
+      "elements/module/hero/HeroDefinition.js",
+      "elements/module/hero/display.html!github:systemjs/plugin-text@0.0.3.js",
+      "elements/module/hero/hero.css!github:systemjs/plugin-text@0.0.3.js",
       "system/application.html!github:systemjs/plugin-text@0.0.3.js",
       "system/application.js",
       "system/elements/field/field.html!github:systemjs/plugin-text@0.0.3.js",
       "system/elements/field/field.js",
+      "system/elements/module/module.html!github:systemjs/plugin-text@0.0.3.js",
+      "system/elements/module/module.js",
       "system/main.js",
       "system/services/TypesDefinitionService.js"
     ],
@@ -925,6 +936,13 @@ System.config({
     ]
   },
   depCache: {
+    "elements/field/fullWidthImage/FullWidthImage.js": [
+      "aurelia-framework",
+      "aurelia-event-aggregator"
+    ],
+    "elements/field/fullWidthImage/FullWidthImageDefinition.js": [
+      "system/services/TypesDefinitionService"
+    ],
     "elements/field/header/Header.js": [
       "aurelia-framework",
       "aurelia-event-aggregator"
@@ -946,7 +964,20 @@ System.config({
     "elements/field/paragraph/ParagraphDefinition.js": [
       "system/services/TypesDefinitionService"
     ],
+    "elements/module/hero/Hero.js": [
+      "aurelia-framework",
+      "aurelia-event-aggregator"
+    ],
+    "elements/module/hero/HeroDefinition.js": [
+      "system/services/TypesDefinitionService"
+    ],
     "system/elements/field/field.js": [
+      "aurelia-framework",
+      "aurelia-event-aggregator",
+      "system/services/TypesDefinitionService",
+      "jquery"
+    ],
+    "system/elements/module/module.js": [
       "aurelia-framework",
       "aurelia-event-aggregator",
       "system/services/TypesDefinitionService",
@@ -959,7 +990,9 @@ System.config({
     "TypesDefinitionDeclaration.js": [
       "elements/field/paragraph/ParagraphDefinition",
       "elements/field/header/HeaderDefinition",
-      "elements/field/image/ImageDefinition"
+      "elements/field/image/ImageDefinition",
+      "elements/field/fullWidthImage/FullWidthImageDefinition",
+      "elements/module/hero/HeroDefinition"
     ]
   }
 });

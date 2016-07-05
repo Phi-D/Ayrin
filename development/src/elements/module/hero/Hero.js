@@ -5,9 +5,7 @@ import { EventAggregator } from 'aurelia-event-aggregator';
 export class Header {
 
   @bindable instanceName = ''
-  @bindable class=''
   constructor(EventAggregator) {
-    this.content = "Wonderful Title";
     this.ea = EventAggregator;
   }
 
@@ -22,7 +20,6 @@ export class Header {
   activate(data) {
     this.data = data;
     this.instanceName = this.data.instanceName;
-    this.class = this.data.class;
   }
 
 }

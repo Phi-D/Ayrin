@@ -4,7 +4,7 @@ module.exports = {
       "includes": [
         "[**/*.js]",
         "**/*.html!text",
-        "**/*.css!text"
+        "*/**/*.css!text"
       ],
       "options": {
         "inject": true,
