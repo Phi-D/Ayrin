@@ -813,11 +813,11 @@ System.config({
   bundles: {
     "app-build.js": [
       "TypesDefinitionDeclaration.js",
-      "elements/field/fullWidthImage/FullWidthImage.js",
-      "elements/field/fullWidthImage/FullWidthImageDefinition.js",
-      "elements/field/fullWidthImage/display.html!github:systemjs/plugin-text@0.0.3.js",
-      "elements/field/fullWidthImage/edit.html!github:systemjs/plugin-text@0.0.3.js",
-      "elements/field/fullWidthImage/fullWidthImage.css!github:systemjs/plugin-text@0.0.3.js",
+      "elements/field/full-width-image/FullWidthImage.js",
+      "elements/field/full-width-image/FullWidthImageDefinition.js",
+      "elements/field/full-width-image/display.html!github:systemjs/plugin-text@0.0.3.js",
+      "elements/field/full-width-image/edit.html!github:systemjs/plugin-text@0.0.3.js",
+      "elements/field/full-width-image/fullWidthImage.css!github:systemjs/plugin-text@0.0.3.js",
       "elements/field/header/Header.js",
       "elements/field/header/HeaderDefinition.js",
       "elements/field/header/display.html!github:systemjs/plugin-text@0.0.3.js",
@@ -936,11 +936,11 @@ System.config({
     ]
   },
   depCache: {
-    "elements/field/fullWidthImage/FullWidthImage.js": [
+    "elements/field/full-width-image/FullWidthImage.js": [
       "aurelia-framework",
       "aurelia-event-aggregator"
     ],
-    "elements/field/fullWidthImage/FullWidthImageDefinition.js": [
+    "elements/field/full-width-image/FullWidthImageDefinition.js": [
       "system/services/TypesDefinitionService"
     ],
     "elements/field/header/Header.js": [
@@ -991,7 +991,7 @@ System.config({
       "elements/field/paragraph/ParagraphDefinition",
       "elements/field/header/HeaderDefinition",
       "elements/field/image/ImageDefinition",
-      "elements/field/fullWidthImage/FullWidthImageDefinition",
+      "elements/field/full-width-image/FullWidthImageDefinition",
       "elements/module/hero/HeroDefinition"
     ]
   }

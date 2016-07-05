@@ -1,8 +1,9 @@
 import {TypesDefinitionService} from 'system/services/TypesDefinitionService';
 new TypesDefinitionService().setType('full-width-image', {
   type:"field",
-  name:"fullWidthImage",
-  dataType: "html",
+  name:"full-width-image",
+  viewModel:"FullWidthImage",
+  dataType: "file",
   edit: "edit.html",
   display: "display.html",
   state:"display"

@@ -23,15 +23,9 @@ export class field {
     });
 
     this.data = typesDefinitionService.getType(this.type);
-    var type = this.data.type;
-    var dir  = this.data.name;
-    var name = this.data.name.charAt(0).toUpperCase() + this.data.name.slice(1);
-
-    console.log("elements/"+type+"/"+dir+"/"+name+".js");
-
-    this.elementModelView = "elements/"+type+"/"+dir+"/"+name+".js";
-    this.elementViewDisplay  = "elements/"+type+"/"+dir+"/"+this.data.display;
-    this.elementViewEdit     = "elements/"+type+"/"+dir+"/"+this.data.edit;
+    this.elementModelView    = typesDefinitionService.getViewModel(this.type);
+    this.elementViewDisplay  = typesDefinitionService.getViewDisplay(this.type);
+    this.elementViewEdit     = typesDefinitionService.getViewEdit(this.type);
 
 
     this.data.instanceName = this.instanceName;
