@@ -32,8 +32,6 @@ export class TypesDefinitionService {
     this.typeDefinitions[type] = definition;
   }
 
-
-
   getTypeDefinitions() {
     return this.typeDefinitions;
   }

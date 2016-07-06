@@ -6,3 +6,6 @@ import 'elements/field/full-width-image/FullWidthImageDefinition'
 
 // Declare all your modules here
 import 'elements/module/hero/HeroDefinition'
+
+// Declare all your layouts here
+import 'elements/layout/two-columns-layout/TwoColumnsLayoutDefinition';

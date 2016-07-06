@@ -1,13 +1,12 @@
 <template>
-  <require from="system/elements/field/field"></require>
-  <require from="elements/module/hero/hero.css"></require>
+  <require from="system/component/component"></require>
   <div class="hero">
     <div class="background">
-      <field type="full-width-image" instance-name="${instanceName}-full-width-image"></field>
+      <component type="full-width-image" instance-name="${instanceName}-full-width-image"></component>
     </div>
     <div class="header">
-      <field type="header" class="title" instance-name="${instanceName}-header"></field>
       <div class="background"></div>
+      <component type="header" class="title" instance-name="${instanceName}-header"></component>
     </div>
   </div>
 </template>

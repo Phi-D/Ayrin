@@ -3,8 +3,7 @@ module.exports = {
     "dist/app-build": {
       "includes": [
         "[**/*.js]",
-        "**/*.html!text",
-        "*/**/*.css!text"
+        "**/*.html!text"
       ],
       "options": {
         "inject": true,

@@ -4,11 +4,11 @@ import {TypesDefinitionService} from 'system/services/TypesDefinitionService';
 import $ from 'jquery';
 
 @inject(Element, TypesDefinitionService, EventAggregator)
-@customElement('field')
+@customElement('component')
 export class field {
-  @bindable elementModelView = '';
-  @bindable elementView = '';
-  @bindable elementModel = '';
+  @bindable modelView = '';
+  @bindable view = '';
+  @bindable model = '';
 
   constructor(element, typesDefinitionService, EventAggregator) {
 
@@ -23,14 +23,14 @@ export class field {
     });
 
     this.data = typesDefinitionService.getType(this.type);
-    this.elementModelView    = typesDefinitionService.getViewModel(this.type);
-    this.elementViewDisplay  = typesDefinitionService.getViewDisplay(this.type);
-    this.elementViewEdit     = typesDefinitionService.getViewEdit(this.type);
+    this.modelView = typesDefinitionService.getViewModel(this.type);
+    this.view      = typesDefinitionService.getViewDisplay(this.type);
+    this.model     = typesDefinitionService.getViewEdit(this.type);
 
 
     this.data.instanceName = this.instanceName;
     this.data.class = this.class;
-    this.elementModel = this.data;
+    this.model = this.data;
     this.toggleState(this.data.state);
 
   }

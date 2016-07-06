@@ -1,0 +1,28 @@
+.hero {
+    position: relative;
+
+    .header {
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+        width: 350px;
+        height: 100px;
+        color: #ffffff;
+
+        .background {
+            position:absolute;
+            left: 0px;
+            bottom:0px;
+            width:350px;
+            height: 100px;
+            background-color: #00ff00;
+            opacity: 0.50;
+        }
+
+        .title {
+            position:absolute;
+            width: 100%;
+            left: 20px;
+        }
+    }
+}

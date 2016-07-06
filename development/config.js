@@ -817,7 +817,6 @@ System.config({
       "elements/field/full-width-image/FullWidthImageDefinition.js",
       "elements/field/full-width-image/display.html!github:systemjs/plugin-text@0.0.3.js",
       "elements/field/full-width-image/edit.html!github:systemjs/plugin-text@0.0.3.js",
-      "elements/field/full-width-image/fullWidthImage.css!github:systemjs/plugin-text@0.0.3.js",
       "elements/field/header/Header.js",
       "elements/field/header/HeaderDefinition.js",
       "elements/field/header/display.html!github:systemjs/plugin-text@0.0.3.js",
@@ -830,16 +829,16 @@ System.config({
       "elements/field/paragraph/ParagraphDefinition.js",
       "elements/field/paragraph/display.html!github:systemjs/plugin-text@0.0.3.js",
       "elements/field/paragraph/edit.html!github:systemjs/plugin-text@0.0.3.js",
+      "elements/layout/two-columns-layout/TwoColumnsLayout.js",
+      "elements/layout/two-columns-layout/TwoColumnsLayoutDefinition.js",
+      "elements/layout/two-columns-layout/display.html!github:systemjs/plugin-text@0.0.3.js",
       "elements/module/hero/Hero.js",
       "elements/module/hero/HeroDefinition.js",
       "elements/module/hero/display.html!github:systemjs/plugin-text@0.0.3.js",
-      "elements/module/hero/hero.css!github:systemjs/plugin-text@0.0.3.js",
       "system/application.html!github:systemjs/plugin-text@0.0.3.js",
       "system/application.js",
-      "system/elements/field/field.html!github:systemjs/plugin-text@0.0.3.js",
-      "system/elements/field/field.js",
-      "system/elements/module/module.html!github:systemjs/plugin-text@0.0.3.js",
-      "system/elements/module/module.js",
+      "system/component/component.html!github:systemjs/plugin-text@0.0.3.js",
+      "system/component/component.js",
       "system/main.js",
       "system/services/TypesDefinitionService.js"
     ],
@@ -964,6 +963,9 @@ System.config({
     "elements/field/paragraph/ParagraphDefinition.js": [
       "system/services/TypesDefinitionService"
     ],
+    "elements/layout/two-columns-layout/TwoColumnsLayoutDefinition.js": [
+      "system/services/TypesDefinitionService"
+    ],
     "elements/module/hero/Hero.js": [
       "aurelia-framework",
       "aurelia-event-aggregator"
@@ -971,13 +973,7 @@ System.config({
     "elements/module/hero/HeroDefinition.js": [
       "system/services/TypesDefinitionService"
     ],
-    "system/elements/field/field.js": [
-      "aurelia-framework",
-      "aurelia-event-aggregator",
-      "system/services/TypesDefinitionService",
-      "jquery"
-    ],
-    "system/elements/module/module.js": [
+    "system/component/component.js": [
       "aurelia-framework",
       "aurelia-event-aggregator",
       "system/services/TypesDefinitionService",
@@ -992,7 +988,8 @@ System.config({
       "elements/field/header/HeaderDefinition",
       "elements/field/image/ImageDefinition",
       "elements/field/full-width-image/FullWidthImageDefinition",
-      "elements/module/hero/HeroDefinition"
+      "elements/module/hero/HeroDefinition",
+      "elements/layout/two-columns-layout/TwoColumnsLayoutDefinition"
     ]
   }
 });

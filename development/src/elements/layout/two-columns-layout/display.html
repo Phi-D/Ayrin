@@ -1,0 +1,14 @@
+<template>
+
+  <require from="system/component/component"></require>
+  <div class="row">
+    <div class="container">
+      <div class="col-md-6">
+        <component repeat.for="component of leftColumns"  type="component.type" instance-name="component.id" class="component.class"></component>
+      </div>
+      <div class="col-md-6">
+        <component repeat.for="component of rightColumns" type="component.type" instance-name="component.id" class="component.class"></component>
+      </div>
+    </div>
+  </div>
+</template>

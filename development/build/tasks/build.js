@@ -1,4 +1,8 @@
 var gulp = require('gulp');
+var sass = require('gulp-sass');
+var concat = require('gulp-concat');
+var minify = require('gulp-minify-css');
+
 var runSequence = require('run-sequence');
 var changed = require('gulp-changed');
 var plumber = require('gulp-plumber');
@@ -31,12 +35,16 @@ gulp.task('build-html', function() {
     .pipe(gulp.dest(paths.output));
 });
 
-// copies changed css files to the output directory
 gulp.task('build-css', function() {
   return gulp.src(paths.css)
-    .pipe(changed(paths.output, {extension: '.css'}))
-    .pipe(gulp.dest(paths.output))
-    .pipe(browserSync.stream());
+    .pipe(plumber())
+    .pipe(changed(paths.style, {extension: '.css'}))
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(concat('styles.css'))
+    .pipe(minify())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(paths.outputCss));
 });
 
 // this task calls the clean task (located
