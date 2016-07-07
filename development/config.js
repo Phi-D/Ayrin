@@ -963,6 +963,11 @@ System.config({
     "elements/field/paragraph/ParagraphDefinition.js": [
       "system/services/TypesDefinitionService"
     ],
+    "elements/layout/two-columns-layout/TwoColumnsLayout.js": [
+      "aurelia-framework",
+      "aurelia-event-aggregator",
+      "system/services/TypesDefinitionService"
+    ],
     "elements/layout/two-columns-layout/TwoColumnsLayoutDefinition.js": [
       "system/services/TypesDefinitionService"
     ],
